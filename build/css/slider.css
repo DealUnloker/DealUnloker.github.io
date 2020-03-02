@@ -1,27 +1,47 @@
 #Slider {
-  background-color: green;
-  height: 85%;
-  width: 100%; }
-  #Slider #slide {
+  height: 60%;
+  width: 100%;
+  position: relative; }
+  #Slider .boxbutton {
+    position: absolute;
+    top: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
     height: 100%;
-    background-image: url("../img/slider/slide_1.jpg");
-    background-color: #ffffff;
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-    #Slider #slide input {
-      height: 10vh;
-      width: 10vh;
-      background: none;
-      border: none;
-      font-family: 'Open Sans';
-      font-size: 48px; }
-    #Slider #slide input:focus {
-      border: none;
-      background: #52cbf8; }
-    #Slider #slide input:hover {
-      background: #52cbf8; }
-    #Slider #slide input:active {
-      border: none; }
+    width: 60%; }
+  #Slider #boxslider {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  #Slider .slide {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: yellow;
+    font-size: 48px;
+    color: #ffffff; }
+    #Slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  #Slider .NextImageButton {
+    height: 6.5vh;
+    width: 6.5vh;
+    border-color: #878a91;
+    color: #878a91;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 6px;
+    font-family: 'Lacquer';
+    font-size: 44px; }
+    #Slider .NextImageButton p {
+      padding-top: 5px;
+      text-align: center;
+      justify-content: center;
+      user-select: none; }

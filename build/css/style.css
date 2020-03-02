@@ -1,52 +1,52 @@
 body {
   background-color: #222836;
   height: 100vh; }
-  body div {
+  body #top {
     background: #ffffff;
     height: 15%; }
-    body div header {
+    body #top header {
       height: 100%;
       margin: 0 20% 0 20%;
       display: flex;
       flex-direction: column; }
-      body div header p {
+      body #top header p {
         margin-left: 10px;
         font-family: 'Open Sans';
         font-weight: 900;
         font-size: 20px; }
-      body div header div {
+      body #top header div {
         height: 50%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center; }
-        body div header div #top_menu {
+        body #top header div #top_menu {
           border-top: 2px solid #e1e9f2;
           border-bottom: 2px solid #e1e9f2;
           padding-left: 30px;
           margin-right: 15px; }
-          body div header div #top_menu table {
+          body #top header div #top_menu table {
             border: 2px solid white;
             border-collapse: collapse; }
-          body div header div #top_menu td {
+          body #top header div #top_menu td {
             padding: 0 15px 0 15px;
             border: 1px solid #d0d5da; }
-          body div header div #top_menu p {
+          body #top header div #top_menu p {
             color: #9ba4b0;
             font-size: 14px; }
-      body div header nav {
+      body #top header nav {
         display: flex;
         flex-direction: row;
         height: 50%; }
-        body div header nav button {
+        body #top header nav button {
           border: none;
           height: 100%;
           width: 10%;
           background-color: #ff8261;
           color: #ffffff;
           padding: 2px; }
-        body div header nav button:focus {
+        body #top header nav button:focus {
           border: none;
           background: #52cbf8; }
-        body div header nav button:hover {
+        body #top header nav button:hover {
           background: #52cbf8; }

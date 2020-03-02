@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
     <title>Hosting</title>
 </head>
 
 <body>
-    <div>
+    <div id="top">
         <header>
             <div>
                 <div id="logo">
@@ -36,7 +37,7 @@
                 </div>
             </div>
             <nav>
-                <button>HOME</button>
+                <button onclick="info()">HOME</button>
                 <button>ABOUT US</button>
                 <button>SERVICE</button>
                 <button>HOSTING PLANS</button>
@@ -50,9 +51,27 @@
         </header>
     </div>
     <div id="Slider">
-        <div id="slide">
-            <input type="button" value="<" class="NextImageButton" onclick="minusSlide()">
-            <input type="button" value=">" class="NextImageButton" onclick="plusSlide()">
+        <div id="boxslider">
+            <div id="slide_1" class="slide">
+                <img src="img/slider/slide_1.jpg" alt="1">
+            </div>
+            <div id="slide_2" class="slide">
+                <img src="img/slider/slide_2.jpg" alt="2">
+            </div>
+            <div id="slide_3" class="slide">
+                <img src="img/slider/slide_3.jpg" alt="3">
+            </div>
+            <div id="slide_4" class="slide">
+                <img src="img/slider/slide_4.jpg" alt="4">
+            </div>
+        </div>
+        <div class="boxbutton">
+            <div class="NextImageButton" onclick="minusSlide()">
+                <p>&lt;</p>
+            </div>
+            <div class="NextImageButton" onclick="plusSlide()">
+                <p>&gt;</p>
+            </div>
         </div>
     </div>
     <script src="scripts/slider.js"></script>

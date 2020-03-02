@@ -1,27 +1,55 @@
+@mixin border_button()
+    border-color: #878a91
+    color: #878a91
+    border-radius: 50px
+    border-style: solid
+    border-width: 6px
+    font-family: 'Lacquer'
+    font-size: 44px
+    p
+        padding-top: 5px
+        text-align: center
+        justify-content: center
+        user-select: none
+    
 #Slider
-    background-color: green
-    height: 85%
+    height: 60%
     width: 100%
-    #slide
+    position: relative
+
+    .boxbutton
+        position: absolute
+        top: 0
+        margin-left: 20%
+        margin-right: 20%
+        align-items: center
         height: 100%
-        background-image: url("../img/slider/slide_1.jpg")
-        background-color: #ffffff
-        background-size: cover
-        background-position: center
         display: flex
         justify-content: space-between
-        align-items: center
-        input
-            height: 10vh
-            width: 10vh
-            background: none
-            border: none
-            font-family: 'Open Sans'
-            font-size: 48px
-        input:focus
-            border: none
-            background: #52cbf8
-        input:hover
-            background: #52cbf8
-        input:active
-            border: none
+        width: 60%
+
+    #boxslider
+        position: relative
+        width: 100%
+        height: 100%
+
+    .slide
+        z-index: -1
+        opacity: 0
+        position: absolute
+        top: 0
+        height: 100%
+        width: 100%
+        background: yellow
+        font-size: 48px
+        color: #ffffff
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    
+    
+    .NextImageButton  
+        height: 6.5vh
+        width: 6.5vh
+        @include border_button()
