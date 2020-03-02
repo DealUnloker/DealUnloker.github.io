@@ -1,0 +1,27 @@
+#Slider {
+  background-color: green;
+  height: 85%;
+  width: 100%; }
+  #Slider #slide {
+    height: 100%;
+    background-image: url("../img/slider/slide_1.jpg");
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #Slider #slide input {
+      height: 10vh;
+      width: 10vh;
+      background: none;
+      border: none;
+      font-family: 'Open Sans';
+      font-size: 48px; }
+    #Slider #slide input:focus {
+      border: none;
+      background: #52cbf8; }
+    #Slider #slide input:hover {
+      background: #52cbf8; }
+    #Slider #slide input:active {
+      border: none; }
