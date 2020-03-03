@@ -1,53 +1,38 @@
 var slideIndex = 1;
-const slider_lenght = document.getElementsByClassName('slide').length + 1;
+showSlides(slideIndex);
 
-
-//Set first slide z-index: 0
-var current_slide = document.getElementById(`slide_1`);
-current_slide.style.opacity = 1;
-
+/* Функция увеличивает индекс на 1, показывает следующй слайд*/
 function plusSlide() {
-    showSlides(slideIndex + 1)
+    showSlides(slideIndex += 1);
 }
 
-
+/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
 function minusSlide() {
-    showSlides(slideIndex - 1)
+    showSlides(slideIndex -= 1);
 }
 
-function showSlides(next_slide) {
-    var pastIndex = slideIndex;
-    if (next_slide == 0)
-        slideIndex = slider_lenght - 1;
-    else if (next_slide == slider_lenght)
-        slideIndex = 1;
-    else
-        slideIndex = next_slide;
-    var slide = document.getElementById(`slide_${slideIndex}`);
-    var past_slide = document.getElementById(`slide_${pastIndex}`);
-    for (var x = 1; x < slider_lenght; x++) {
-        if (x == pastIndex || x == slideIndex)
-            continue;
-        document.getElementById(`slide_${x}`).style.zIndex = -2;
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Основная функция слайдера */
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("item");
+    var dots = document.getElementsByClassName("slider-dots_item");
+    if (n > slides.length) {
+        slideIndex = 1
     }
-    slide.style.zIndex = 0;
-    past_slide.style.zIndex = -999;
-    fade(slide);
-    past_slide.style.opacity = 0;
-}
-
-
-function fade(element) {
-    var op = 0;
-    var intervalId = setInterval(function() {
-        element.style.opacity = op;
-        op += 0.05;
-        if (op == 1) clearInterval(intervalId);
-    }, 70);
-}
-
-function info() {
-    for (var i = 1; i <= slider_lenght; i++) {
-        alert(document.getElementById(`slide_${i}`).style.zIndex)
+    if (n < 1) {
+        slideIndex = slides.length
     }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }

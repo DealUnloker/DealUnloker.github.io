@@ -37,43 +37,331 @@
                 </div>
             </div>
             <nav>
-                <button onclick="info()">HOME</button>
-                <button>ABOUT US</button>
-                <button>SERVICE</button>
-                <button>HOSTING PLANS</button>
-                <button>DOMAIN</button>
-                <button>FAQ</button>
-                <button>TESTIMONIALS</button>
-                <button>BLOG</button>
-                <button>SUPPORT</button>
-                <button>CONTACT US</button>
+                <button class="button_teamplate">HOME</button>
+                <button class="button_teamplate">ABOUT US</button>
+                <button class="button_teamplate">SERVICE</button>
+                <button class="button_teamplate">HOSTING PLANS</button>
+                <button class="button_teamplate">DOMAIN</button>
+                <button class="button_teamplate">FAQ</button>
+                <button class="button_teamplate">TESTIMONIALS</button>
+                <button class="button_teamplate">BLOG</button>
+                <button class="button_teamplate">SUPPORT</button>
+                <button class="button_teamplate">CONTACT US</button>
             </nav>
         </header>
     </div>
-    <div id="Slider">
-        <div id="boxslider">
-            <div id="slide_1" class="slide">
-                <img src="img/slider/slide_1.jpg" alt="1">
+    <div id="slider_background">
+        <div class="slider">
+            <div class="item">
+                <img src="img/slider/slide_1.jpg" alt="Первый слайд">
+                <div class="slideText">
+                    <h1>AWESOME HOSTING</h1>
+                    <p>WITH UNLIMITED FEATURES</p>
+                </div>
             </div>
-            <div id="slide_2" class="slide">
-                <img src="img/slider/slide_2.jpg" alt="2">
+
+            <div class="item">
+                <img src="img/slider/slide_2.jpg" alt="Второй слайд">
+                <div class="slideText">
+                    <h1>AWESOME HOSTING</h1>
+                    <p>WITH BEST SUPPORT TEAM</p>
+                </div>
             </div>
-            <div id="slide_3" class="slide">
-                <img src="img/slider/slide_3.jpg" alt="3">
+
+            <div class="item">
+                <img src="img/slider/slide_3.jpg" alt="Третий слайд">
+                <div class="slideText">
+                    <h1>AWESOME HOSTING</h1>
+                    <p>CREATED BY GENIAL DEVELOPERS </p>
+                </div>
             </div>
-            <div id="slide_4" class="slide">
-                <img src="img/slider/slide_4.jpg" alt="4">
+            <div class="item">
+                <img src="img/slider/slide_4.jpg" alt="Третий слайд">
+                <div class="slideText">
+                    <h1>AWESOME HOSTING</h1>
+                    <p>YOUR MUM LIKES US </p>
+                </div>
             </div>
-        </div>
-        <div class="boxbutton">
-            <div class="NextImageButton" onclick="minusSlide()">
-                <p>&lt;</p>
+            <div class="prev" onclick="minusSlide()">
+                <p>&#10094;</p>
             </div>
-            <div class="NextImageButton" onclick="plusSlide()">
-                <p>&gt;</p>
+            <div class="next" onclick="plusSlide()">
+                <p>&#10095;</p>
+            </div>
+
+            <div class="slider-dots">
+                <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                <span class="slider-dots_item" onclick="currentSlide(4)"></span>
             </div>
         </div>
     </div>
+    <div class="search_filter">
+        <form action="selectdomain" method="POST" name="form1">
+            <div class="filter_text">
+                <img src="img/icons/search.png" alt="search_icon">
+                <p>SEARCH YOUR</p>
+                <p><strong>DOMAIN</strong></p>
+            </div>
+            <input type="text" size="30" name="name" id="domain_input" class="form__input" placeholder="Enter your domain name">
+            <select name="time" id="time_selector" class="form__input">
+                <option value="1">0-1 year</option>
+                <option value="2">2 years</option>
+                <option value="3">3+ years</option>
+            </select>
+            <select name="top_lvl_domain" id="lvl_selector" class="form__input">
+                <option value="com">.com</option>
+                <option value="ua">.ua</option>
+                <option value="ru">.ru</option>
+            </select>
+            <input type="button" id="search_button" class="button_teamplate" alt="Submit" value="SEARCH">
+        </form>
+    </div>
+    <div class="white_block">
+        <div class="benefits">
+            <div class="title">
+                <div id="good_line"></div>
+                <p>OUR</p>
+                <p><strong>BENEFITS</strong></p>
+            </div>
+            <div id="benefit_block">
+                <div class="benefit">
+                    <img src="img/benefits_icons/uptime.png" alt="uptime">
+                    <div>
+                        <p><strong>99,9% UPTIME</strong></p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, enim!</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <img src="img/benefits_icons/support.png" alt="support">
+                    <div>
+                        <p><strong>24/7/365 SUPPORT</strong></p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, repellat!</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <img src="img/benefits_icons/protect.png" alt="protect_ur_pc">
+                    <div>
+                        <p><strong>PROTECT YOUR PC</strong></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, fuga.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <img src="img/benefits_icons/dns.png" alt="dns">
+                    <div>
+                        <p><strong>DNS CONTROL</strong></p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, unde.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <img src="img/benefits_icons/domain.png" alt="domain">
+                    <div>
+                        <p><strong>DOMAIN TRANSFER</strong></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, esse?</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <img src="img/benefits_icons/security.png" alt="security">
+                    <div>
+                        <p><strong>100% SECURITY</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, sint!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="yellow_block">
+            <div id="services">
+                <div id="left_side">
+                    <div class="title">
+                        <div id="good_line"></div>
+                        <p>NOW</p>
+                        <p><strong>WHAT IS HOT</strong></p>
+                        <img src="img/temp_offer.png" alt="add">
+                    </div>
+                </div>
+                <div id="right_side">
+                    <div class="title">
+                        <div id="good_line"></div>
+                        <p>OUR</p>
+                        <p><strong>FEATURES</strong></p>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor consectetur.</li>
+                        <li>Being a bad person</li>
+                        <li>Lorem ipsum dolor sit amet </li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet </li>
+                        <li>為何</li>
+                    </ul>
+                    <input type="button" alt="that's all" value="VIEW ALL" class="button_teamplate">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white_block_2">
+        <div class="price_list">
+            <div class="title">
+                <div id="good_line"></div>
+                <p>OUR</p>
+                <p><strong>HOSTING</strong></p>
+            </div>
+            <div id="prices">
+                <div class="rate">
+                    <div class="price">
+                        <h3>$5</h3>
+                        <p>PER MONTH</p>
+                    </div>
+                    <div id="PLAN">
+                        <p>STANDART PLAN</p>
+                    </div>
+                    <ul>
+                        <li>10GB Disk Space</li>
+                        <li>1TB Bandwidth</li>
+                        <li>Free DDoS Protection</li>
+                        <li>Free Daily Backups</li>
+                        <li>Managed Hosting</li>
+                    </ul>
+                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
+                </div>
+                <div class="rate">
+                    <div class="price">
+                        <h3>$6</h3>
+                        <p>PER MONTH</p>
+                    </div>
+                    <div id="PLAN">
+                        <p>ADVANCED PLAN</p>
+                    </div>
+                    <ul>
+                        <li>10GB Disk Space</li>
+                        <li>1TB Bandwidth</li>
+                        <li>Free DDoS Protection</li>
+                        <li>Free Daily Backups</li>
+                        <li>Managed Hosting</li>
+                    </ul>
+                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
+                </div>
+                <div class="rate">
+                    <div class="price">
+                        <h3>$8</h3>
+                        <p>PER MONTH</p>
+                    </div>
+                    <div id="PLAN">
+                        <p>BUSINESS PLAN</p>
+                    </div>
+                    <ul>
+                        <li>10GB Disk Space</li>
+                        <li>1TB Bandwidth</li>
+                        <li>Free DDoS Protection</li>
+                        <li>Free Daily Backups</li>
+                        <li>Managed Hosting</li>
+                    </ul>
+                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
+                </div>
+                <div class="rate">
+                    <div class="price">
+                        <h3>$9</h3>
+                        <p>PER MONTH</p>
+                    </div>
+                    <div id="PLAN">
+                        <p>GOLD PLAN</p>
+                    </div>
+                    <ul>
+                        <li>10GB Disk Space</li>
+                        <li>1TB Bandwidth</li>
+                        <li>Free DDoS Protection</li>
+                        <li>Free Daily Backups</li>
+                        <li>Managed Hosting</li>
+                    </ul>
+                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blue_block">
+        <div id="newsletter">
+            <div class="filter_text">
+                <img src="img/icons/mail.png" alt="mail">
+                <p>SIGN UP YOUR</p>
+                <p><strong>NEWSLETTER</strong></p>
+            </div>
+            <form action="subscribe" class="send_form">
+                <input type="text" name="domain" class="form__input" placeholder="Enter your domain name" size="60">
+                <button class="button_teamplate">SIGN UP NOW</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="underground">
+            <div id="copyright">
+                <img src="img/logo.png" alt="logo">
+                <div>
+                    <p><strong>HOSTING</strong></p>
+                    <p>2020 © Some copyright</p>
+                </div>
+            </div>
+            <div id="quick_links">
+                <div id="linkname">
+                    <p><strong>QUICK LINKS</strong></p>
+                </div>
+                <div id="links">
+                    <a href="">Home</a>
+                    <a href="">Faq</a>
+                    <a href="">About Us</a>
+                    <a href="">Blog</a>
+                    <a href="">Service</a>
+                    <a href="">Support</a>
+                    <a href="">Hosting plans</a>
+                    <a href="">Contact</a>
+                    <a href="">Domains</a>
+                </div>
+            </div>
+            <div id="contact_us">
+                <div id="contact_us_prev">
+                    <p><strong>CONTACT US</strong></p>
+                </div>
+                <div id="contacts">
+                    <ul>
+                        <li>
+                            <strong>Address:</strong>
+                            <p>Somewhere on this planet..</p>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <p> dealunloker@gmail.com</p>
+                        </li>
+                        <li>
+                            <strong>Call:</strong>
+                            <p>+12 34 567 890</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contact_us">
+                <div id="contact_us_prev">
+                    <p><strong>SOCIAL MEDIA</strong></p>
+                </div>
+                <div id="contacts">
+                    <ul>
+                        <li>
+                            <strong>></strong>
+                            <a href="https://vk.com/deal_unloker">VK</a></li>
+                        <li>
+                            <strong>></strong>
+                            <a href="https://www.youtube.com/channel/UCwgi_IM8FWJM4aBcYIdrfig">YOUTUBE</a></li>
+                        <li>
+                            <strong>></strong>
+                            <a href="https://www.instagram.com/dealunloker/">INSTAGRAM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="scripts/slider.js"></script>
 </body>
 
