@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' media='(max-width: 1200px) and (min-width: 645px)' href='css/medium_screen.css' />
     <link rel='stylesheet' media='(max-width: 645px)' href='css/small_screen.css' />
     <link rel="stylesheet" href="css/slider.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -25,13 +26,13 @@
                     <table>
                         <tr>
                             <td>
-                                <p>Support: info@webhosting.com</p>
+                                <a>Support: info@webhosting.com</a>
                             </td>
                             <td>
-                                <p>Register</p>
+                                <a href="">Register</a>
                             </td>
                             <td>
-                                <p>Login</p>
+                                <a href="">Login</a>
                             </td>
                         </tr>
                     </table>
@@ -51,7 +52,7 @@
             </nav>
         </header>
     </div>
-    <!-- <div id="slider_background">
+    <div id="slider_background">
         <div class="slider">
             <div class="item">
                 <img src="img/slider/slide_1.jpg" alt="Первый слайд">
@@ -80,14 +81,16 @@
                 <img src="img/slider/slide_4.jpg" alt="Третий слайд">
                 <div class="slideText">
                     <h1>AWESOME HOSTING</h1>
-                    <p>YOUR MUM LIKES US </p>
+                    <p>EVERYONE LIKES US</p>
                 </div>
             </div>
-            <div class="prev" onclick="minusSlide()">
-                <p>&#10094;</p>
-            </div>
-            <div class="next" onclick="plusSlide()">
-                <p>&#10095;</p>
+            <div id="buttons">
+                <div class="prev" onclick="minusSlide()">
+                    <p>&#10094;</p>
+                </div>
+                <div class="next" onclick="plusSlide()">
+                    <p>&#10095;</p>
+                </div>
             </div>
             <div></div>
             <div class="slider-dots">
@@ -97,7 +100,7 @@
                 <span class="slider-dots_item" onclick="currentSlide(4)"></span>
             </div>
         </div>
-    </div> -->
+    </div>
     <div class="background_block" id="domain_bg">
         <div class="inside_block">
             <form action="selectdomain" method="POST" name="form1" class="domain">
@@ -107,8 +110,7 @@
                     <p><strong>DOMAIN</strong></p>
                 </div>
                 <div id="inputs">
-                    <input type="text" name="name" id="domain_input" class="form__input"
-                        placeholder="Enter your domain name">
+                    <input type="text" name="name" id="domain_input" class="form__input" placeholder="Enter your domain name">
 
                     <select name="time" id="time_selector" class="form__input">
                         <option value="1">0-1 year</option>
@@ -181,195 +183,224 @@
             </div>
         </div>
     </div>
-    <!-- <div class="background_block">
+    <div class="background_block" id="feature_bg">
         <div class="inside_block">
-            <div id="left_side">
-                <div class="title">
-                    <div id="good_line"></div>
-                    <p>NOW</p>
-                    <p><strong>WHAT IS HOT</strong></p>
-                    <img src="img/temp_offer.png" alt="add">
+            <div class="feature_block">
+                <div id="left_side">
+                    <div class="title_2">
+                        <div id="good_line"></div>
+                        <p>NOW</p>
+                        <p><strong>WHAT IS HOT</strong></p>
+                    </div>
+                    <div id="banner">
+                        <div class="border">
+                            <div id="t0">
+                                <p>GET UP TO</p>
+                            </div>
+                            <div id="bottom">
+                                <div id="t1">
+                                    <p>50%</p>
+                                </div>
+                                <div id="t2">
+                                    <p>OFF</p>
+                                </div>
+                                <div id="d2">
+                                    <div id="t3">
+                                        <p>EACH</p>
+                                    </div>
+                                    <div id="t4">
+                                        <p>HOSTING</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="right_side">
-                <div class="title">
-                    <div id="good_line"></div>
-                    <p>OUR</p>
-                    <p><strong>FEATURES</strong></p>
+                <div id="right_side">
+                    <div class="title_2">
+                        <div id="good_line"></div>
+                        <p>OUR</p>
+                        <p><strong>FEATURES</strong></p>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor consectetur.</li>
+                        <li>Being a bad person</li>
+                        <li>Lorem ipsum dolor sit amet </li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet </li>
+                        <li>為何</li>
+                    </ul>
+                    <input type="button" alt="that's all" value="VIEW ALL" class="button_teamplate">
                 </div>
-                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor consectetur.</li>
-                    <li>Being a bad person</li>
-                    <li>Lorem ipsum dolor sit amet </li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem ipsum dolor sit amet </li>
-                    <li>為何</li>
-                </ul>
-                <input type="button" alt="that's all" value="VIEW ALL" class="button_teamplate">
             </div>
         </div>
     </div>
     <div class="background_block" id="hosting_bg">
         <div class="inside_block">
-            <div class="title">
-                <div id="good_line"></div>
-                <p>OUR</p>
-                <p><strong>HOSTING</strong></p>
-            </div>
-            <div id="prices">
-                <div class="rate">
-                    <div class="price">
-                        <h3>$5</h3>
-                        <p>PER MONTH</p>
-                    </div>
-                    <div id="PLAN">
-                        <p>STANDART PLAN</p>
-                    </div>
-                    <ul>
-                        <li>10GB Disk Space</li>
-                        <li>1TB Bandwidth</li>
-                        <li>Free DDoS Protection</li>
-                        <li>Free Daily Backups</li>
-                        <li>Managed Hosting</li>
-                    </ul>
-                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
+            <div class="pricelist_block">
+                <div class="title_2">
+                    <div id="good_line"></div>
+                    <p>OUR</p>
+                    <p><strong>HOSTING</strong></p>
                 </div>
-                <div class="rate">
-                    <div class="price">
-                        <h3>$6</h3>
-                        <p>PER MONTH</p>
+                <div id="prices">
+                    <div class="rate">
+                        <div class="price">
+                            <h3>$5</h3>
+                            <p>PER MONTH</p>
+                        </div>
+                        <div id="PLAN">
+                            <p>STANDART PLAN</p>
+                        </div>
+                        <ul>
+                            <li>10GB Disk Space</li>
+                            <li>1TB Bandwidth</li>
+                            <li>Free DDoS Protection</li>
+                            <li>Free Daily Backups</li>
+                            <li>Managed Hosting</li>
+                        </ul>
+                        <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
                     </div>
-                    <div id="PLAN">
-                        <p>ADVANCED PLAN</p>
+                    <div class="rate">
+                        <div class="price">
+                            <h3>$6</h3>
+                            <p>PER MONTH</p>
+                        </div>
+                        <div id="PLAN">
+                            <p>ADVANCED PLAN</p>
+                        </div>
+                        <ul>
+                            <li>10GB Disk Space</li>
+                            <li>1TB Bandwidth</li>
+                            <li>Free DDoS Protection</li>
+                            <li>Free Daily Backups</li>
+                            <li>Managed Hosting</li>
+                        </ul>
+                        <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
                     </div>
-                    <ul>
-                        <li>10GB Disk Space</li>
-                        <li>1TB Bandwidth</li>
-                        <li>Free DDoS Protection</li>
-                        <li>Free Daily Backups</li>
-                        <li>Managed Hosting</li>
-                    </ul>
-                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
-                </div>
-                <div class="rate">
-                    <div class="price">
-                        <h3>$8</h3>
-                        <p>PER MONTH</p>
+                    <div class="rate">
+                        <div class="price">
+                            <h3>$8</h3>
+                            <p>PER MONTH</p>
+                        </div>
+                        <div id="PLAN">
+                            <p>BUSINESS PLAN</p>
+                        </div>
+                        <ul>
+                            <li>10GB Disk Space</li>
+                            <li>1TB Bandwidth</li>
+                            <li>Free DDoS Protection</li>
+                            <li>Free Daily Backups</li>
+                            <li>Managed Hosting</li>
+                        </ul>
+                        <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
                     </div>
-                    <div id="PLAN">
-                        <p>BUSINESS PLAN</p>
+                    <div class="rate">
+                        <div class="price">
+                            <h3>$9</h3>
+                            <p>PER MONTH</p>
+                        </div>
+                        <div id="PLAN">
+                            <p>GOLD PLAN</p>
+                        </div>
+                        <ul>
+                            <li>10GB Disk Space</li>
+                            <li>1TB Bandwidth</li>
+                            <li>Free DDoS Protection</li>
+                            <li>Free Daily Backups</li>
+                            <li>Managed Hosting</li>
+                        </ul>
+                        <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
                     </div>
-                    <ul>
-                        <li>10GB Disk Space</li>
-                        <li>1TB Bandwidth</li>
-                        <li>Free DDoS Protection</li>
-                        <li>Free Daily Backups</li>
-                        <li>Managed Hosting</li>
-                    </ul>
-                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
-                </div>
-                <div class="rate">
-                    <div class="price">
-                        <h3>$9</h3>
-                        <p>PER MONTH</p>
-                    </div>
-                    <div id="PLAN">
-                        <p>GOLD PLAN</p>
-                    </div>
-                    <ul>
-                        <li>10GB Disk Space</li>
-                        <li>1TB Bandwidth</li>
-                        <li>Free DDoS Protection</li>
-                        <li>Free Daily Backups</li>
-                        <li>Managed Hosting</li>
-                    </ul>
-                    <input type="button" class="button_teamplate" value="SIGNUP" alt="signup">
                 </div>
             </div>
         </div>
     </div>
     <div class="background_block" id="newsletter_bg">
         <div class="inside_block">
-            <div class="filter_text">
-                <img src="img/icons/mail.png" alt="mail">
-                <p>SIGN UP YOUR</p>
-                <p><strong>NEWSLETTER</strong></p>
+            <div class="newsletter_block">
+                <div class="title">
+                    <img src="img/icons/mail.png" alt="mail">
+                    <p>SIGN UP YOUR</p>
+                    <p><strong>NEWSLETTER</strong></p>
+                </div>
+                <form action="subscribe" class="send_form">
+                    <input type="text" name="domain" class="form__input" placeholder="Enter your domain name">
+                    <button class="button_teamplate">SIGN UP NOW</button>
+                </form>
             </div>
-            <form action="subscribe" class="send_form">
-                <input type="text" name="domain" class="form__input" placeholder="Enter your domain name">
-                <button class="button_teamplate">SIGN UP NOW</button>
-            </form>
         </div>
-    </div>
     </div>
     <footer class="background_block" id="footer_bg">
         <div class="inside_block">
-            <div id="copyright">
-                <img src="img/logo.png" alt="logo">
-                <div>
-                    <p><strong>HOSTING</strong></p>
-                    <p>2020 © Some copyright</p>
+            <div class="footer_block">
+                <div id="copyright">
+                    <img src="img/logo.png" alt="logo">
+                    <div>
+                        <p><strong>HOSTING</strong></p>
+                        <p>2020 © Some copyright</p>
+                    </div>
                 </div>
-            </div>
-            <div id="quick_links">
-                <div id="linkname">
-                    <p><strong>QUICK LINKS</strong></p>
+                <div id="quick_links">
+                    <div id="linkname">
+                        <p><strong>QUICK LINKS</strong></p>
+                    </div>
+                    <div id="links">
+                        <a href="">Home</a>
+                        <a href="">Faq</a>
+                        <a href="">About Us</a>
+                        <a href="">Blog</a>
+                        <a href="">Service</a>
+                        <a href="">Support</a>
+                        <a href="">Hosting plans</a>
+                        <a href="">Contact</a>
+                        <a href="">Domains</a>
+                    </div>
                 </div>
-                <div id="links">
-                    <a href="">Home</a>
-                    <a href="">Faq</a>
-                    <a href="">About Us</a>
-                    <a href="">Blog</a>
-                    <a href="">Service</a>
-                    <a href="">Support</a>
-                    <a href="">Hosting plans</a>
-                    <a href="">Contact</a>
-                    <a href="">Domains</a>
+                <div id="contact_us">
+                    <div id="contact_us_prev">
+                        <p><strong>CONTACT US</strong></p>
+                    </div>
+                    <div id="contacts">
+                        <ul>
+                            <li>
+                                <strong>Address:</strong>
+                                <p>Somewhere on this planet..</p>
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                <p> dealunloker@gmail.com</p>
+                            </li>
+                            <li>
+                                <strong>Call:</strong>
+                                <p>+12 34 567 890</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div id="contact_us">
-                <div id="contact_us_prev">
-                    <p><strong>CONTACT US</strong></p>
-                </div>
-                <div id="contacts">
-                    <ul>
-                        <li>
-                            <strong>Address:</strong>
-                            <p>Somewhere on this planet..</p>
-                        </li>
-                        <li>
-                            <strong>Email:</strong>
-                            <p> dealunloker@gmail.com</p>
-                        </li>
-                        <li>
-                            <strong>Call:</strong>
-                            <p>+12 34 567 890</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="contact_us">
-                <div id="contact_us_prev">
-                    <p><strong>SOCIAL MEDIA</strong></p>
-                </div>
-                <div id="contacts">
-                    <ul>
-                        <li>
-                            <strong>></strong>
-                            <a href="https://vk.com/deal_unloker">VK</a></li>
-                        <li>
-                            <strong>></strong>
-                            <a href="https://www.youtube.com/channel/UCwgi_IM8FWJM4aBcYIdrfig">YOUTUBE</a></li>
-                        <li>
-                            <strong>></strong>
-                            <a href="https://www.instagram.com/dealunloker/">INSTAGRAM</a></li>
-                    </ul>
+                <div id="social">
+                    <div id="contact_us_prev">
+                        <p><strong>SOCIAL MEDIA</strong></p>
+                    </div>
+                    <div id="contacts">
+                        <ul>
+                            <li>
+                                <strong>></strong>
+                                <a href="https://vk.com/deal_unloker">VK</a></li>
+                            <li>
+                                <strong>></strong>
+                                <a href="https://www.youtube.com/channel/UCwgi_IM8FWJM4aBcYIdrfig">YOUTUBE</a></li>
+                            <li>
+                                <strong>></strong>
+                                <a href="https://www.instagram.com/dealunloker/">INSTAGRAM</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="scripts/slider.js"></script>
 </body>
 

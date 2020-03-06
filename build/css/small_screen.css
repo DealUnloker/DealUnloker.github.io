@@ -1,6 +1,9 @@
 #top {
   height: 100% !important; }
 
+.background_block {
+  width: 100% !important; }
+
 #highlevel_top {
   flex-direction: column;
   margin-bottom: 10px;
@@ -8,7 +11,9 @@
   height: 100px !important; }
 
 #top_menu {
-  padding-left: 0 !important; }
+  padding-left: 0 !important;
+  margin-right: 10px;
+  margin-left: 10px; }
 
 #lowlevel_top {
   height: 100% !important;
@@ -31,13 +36,103 @@
     .domain .title strong {
       font-size: 18px; }
   .domain #inputs {
-    flex-direction: column; }
-    .domain #inputs #domain_input {
-      width: auto !important; }
+    flex-direction: column;
+    width: 340px !important; }
     .domain #inputs #domain_input, .domain #inputs #time_selector, .domain #inputs #lvl_selector {
-      margin: 10px 10px; }
+      margin: 10px; }
+    .domain #inputs #domain_input {
+      width: 275px; }
+    .domain #inputs #time_selector, .domain #inputs #lvl_selector {
+      width: 320px; }
   .domain .button_teamplate {
     margin: 10px; }
 
+.benefits {
+  height: 100%;
+  width: 100% !important; }
+  .benefits #benefit_block {
+    height: 100%; }
+  .benefits .benefit {
+    width: 100% !important; }
+
 .title_2 {
-  margin-top: 0 !important; }
+  margin-top: 10px !important; }
+
+.feature_block {
+  height: 100% !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important; }
+  .feature_block #left_side, .feature_block #right_side {
+    padding-top: 0 !important;
+    width: 100% !important; }
+  .feature_block #left_side {
+    margin: 0 !important; }
+    .feature_block #left_side #banner {
+      width: 300px !important; }
+      .feature_block #left_side #banner .border {
+        width: 300px !important; }
+        .feature_block #left_side #banner .border #bottom {
+          width: 280px !important; }
+  .feature_block #right_side {
+    padding-left: 0 !important; }
+    .feature_block #right_side ul {
+      justify-content: flex-start !important;
+      margin-left: 20px; }
+    .feature_block #right_side ul > li {
+      margin-left: 30px; }
+    .feature_block #right_side .button_teamplate {
+      margin: 10px 40px !important;
+      width: 60%; }
+
+.pricelist_block {
+  height: 100% !important; }
+  .pricelist_block .title_2 {
+    margin-bottom: 10px !important; }
+  .pricelist_block #prices {
+    flex-direction: column;
+    align-items: center; }
+    .pricelist_block #prices .rate {
+      margin: 10px;
+      width: 90%; }
+
+.newsletter_block {
+  height: 100% !important;
+  flex-direction: column; }
+  .newsletter_block .title {
+    margin: 50px 27px 0 !important;
+    align-self: flex-start; }
+  .newsletter_block .send_form {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; }
+  .newsletter_block input {
+    margin-bottom: 20px !important;
+    width: 80% !important; }
+  .newsletter_block button {
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+    width: 90% !important;
+    height: 50px !important; }
+
+.footer_block {
+  flex-direction: column;
+  height: 100% !important;
+  align-items: flex-start !important;
+  padding-left: 20px  !important; }
+  .footer_block #copyright, .footer_block #quick_links, .footer_block #contact_us, .footer_block #social {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important; }
+  .footer_block #copyright {
+    width: auto !important;
+    margin-left: -30px !important; }
+  .footer_block #quick_links {
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .footer_block #copyright {
+    align-self: center; }

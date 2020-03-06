@@ -1,345 +1,3 @@
-// $my_eyes: #4c515b
-
-// body
-//     height: 100vh
-//     #top
-//         background: #ffffff
-//         height: 15%
-//         header
-//             height: 100%
-//             margin: 0 20% 0 20%
-//             display: flex
-//             flex-direction: column
-//             p
-//                 margin-left: 10px
-//                 font-family: 'Open Sans'
-//                 font-weight: 900
-//                 font-size: 20px
-//             div
-//                 height: 50%
-//                 display: flex
-//                 flex-direction: row
-//                 justify-content: space-between
-//                 align-items: center
-//                 #top_menu
-//                     border-top: 2px solid #e1e9f2
-//                     border-bottom: 2px solid #e1e9f2
-//                     padding-left: 30px
-//                     margin-right: 15px
-//                     table
-//                         border: 2px solid white
-//                         border-collapse: collapse
-//                     td
-//                         padding: 0 15px 0 15px
-//                         border: 1px solid #d0d5da
-//                     p
-//                         color: #9ba4b0
-//                         font-size: 14px
-//             nav
-//                 display: flex
-//                 flex-direction: row
-//                 height: 50%
-
-//     .button_teamplate
-//         border: none
-//         height: 100%
-//         width: 10%
-//         background-color: #ff8261
-//         color: #ffffff
-//         padding: 2px
-//         &:focus
-//             border: none
-//             background: #52cbf8
-//         &:hover
-//             background: #52cbf8
-
-//     .search_filter
-//         text-align: center
-//         height: 25vh
-//         width: 100%
-//         background-color: #e7f4f8
-//         display: flex
-//         align-items: center
-//         justify-content: center
-//         form
-//             width: 60%
-//             display: flex
-//             align-items: center
-//             justify-content: center
-//         #domain_input
-//             padding: 10px
-//             width: 50%
-//         #time_selector
-//             width: 14%
-//             padding: 10px
-//         #lvl_selector
-//             width: 10%
-//             padding: 10px
-        
-//     .filter_text
-//         margin: 10px
-//         transform: translateY(-22%)
-//         text-align: left
-//         display: inline-block
-//         font-family: Open Sans
-//         strong
-//             font-size: 28px
-
-
-
-
-.form__input
-    font-family: 'Roboto', sans-serif
-    color: #333
-    font-size: 1.2rem
-    margin: 0 auto
-    padding: 0.7rem 1.4rem 0.5rem 1.4rem
-    border-radius: 0.2rem
-    background-color: rgb(255, 255, 255)
-    border: none
-    border-bottom: 0.3rem solid transparent
-    transition: all 0.3s
-
-
-//     #search_button
-//         min-width: 64px
-//         padding: 4px
-//         margin: 10px
-//         border-radius: 4px
-//         height: 45px
-
-
-//     .white_block
-//         width: 100%
-//         height: 540px
-//         display: flex
-//         justify-content: center
-
-//     .white_block_2
-//         width: 100%
-//         height: 760px
-//         display: flex
-//         justify-content: center
-    
-//     .benefits
-//         width: 60%
-//         display: flex
-//         justify-content: center
-//         flex-direction: column
-    
-//     #benefit_block
-//         height: 70%
-//         display: flex
-//         flex-wrap: wrap
-//         justify-content: space-between
-//         align-items: center
-//         .benefit
-//              width: 320px
-//              margin: 10px
-//              padding: 10px
-//              display: flex
-//              align-items: flex-start
-//              font-family: Open Sans
-//              img
-//                  margin: 5px 20px 0px 10px
-//              p
-//                 margin-bottom: 5px
-        
-//     .title
-//         padding-left: 20px
-//         font-family: Open Sans
-//         height: 30%
-//         display: flex
-//         flex-direction: column
-//         justify-content: flex-end
-//         #good_line
-//             width: 30px
-//             border-top: 3px solid black
-//             border-color: #fb6b45
-//             margin-bottom: 8px
-//         p
-//             color: #9daeb4
-//             font-size: 30px
-//         strong 
-//             color: #556b72
-//             font-size: 40px
-
-    
-//     #yellow_block
-//         height: 415px
-//         width: 100%
-//         background-color: #fffbde
-//         display: flex
-//         justify-content: center
-//         #services
-//             height: 100%
-//             width: 60%
-//             display: flex
-//             justify-content: flex-start
-//             align-items: flex-start
-//             #left_side, #right_side
-//                 margin: 70px 20px 0 20px
-
-//         #right_side
-//             display: flex
-//             flex-direction: column
-//             width: 100%
-//             font-family: Open Sans
-//             ul
-//                 display: flex
-//                 flex-wrap: wrap
-//                 justify-content: space-around
-//                 li
-//                     width: 250px
-//                     margin: 5px
-//             input
-//                 align-self: center
-//                 width: 90%
-//                 margin-top: 10px
-//                 height: 40px
-//                 font-size: 18px
-
-//     .price_list
-//         width: 60%
-//         height: 780px
-//         .title
-//             margin-bottom: 20px
-//             margin-top: -50px
-    
-//     #prices
-//         display: flex
-//         justify-content: space-around
-//         .rate
-//             height: 480px
-//             width: 265px
-//             font-family: Open Sans
-//             display: flex
-//             flex-direction: column
-//             align-items: center
-//             text-align: center
-//             border: 2px solid #e1eff4
-//             color: #556b72
-//             .price
-//                 margin-top: 20px
-//                 margin-bottom: 10px
-//                 h3
-//                     font-size: 44px
-//                     font-weight: 900
-//                 p
-//                     margin-top: -7px
-//                     font-size: 20px
-//             #PLAN
-//                 font-weight: 900
-//                 color: #ffffff
-//                 width: 185px
-//                 height: 60px
-//                 font-size: 14px
-//                 background-color: #52cbf8
-//                 display: flex
-//                 justify-content: center
-//                 align-items: center
-//                 margin-top: 10px
-//                 margin-bottom: 10px
-//             ul>li
-//                 list-style-type: none
-//                 padding-top: 10px
-//                 padding-bottom: 10px
-//                 &:not(:first-child)
-//                     border-top: 1px solid #556b72
-//             input
-//                 margin-top: 12px
-//                 width: 120px
-//                 height: 50px
-
-//     .blue_block
-//         width: 100%
-//         height: 240px
-//         display: flex
-//         justify-content: center
-//         align-content: center
-//         background-color: #e7f4f8
-//         #newsletter
-//             width: 60%
-//             display: flex
-//             justify-content: space-between
-//             align-items: center
-//             .send_form
-//                 width: 85%
-//                 input
-//                     margin-left: 10px
-//                     width: 75%
-//                 button 
-//                     height: 50px
-//                     width: 150px
-    
-//     footer
-//         height: 400px
-//         width: 100%
-//         background-color: #4c515b
-//         display: flex
-//         justify-content: center
-//         align-items: center
-//         font-family: Open Sans
-//         p
-//             color: #828b9d
-//         strong
-//             color: #ffffff
-//         .underground
-//             height: 100%
-//             width: 60%
-//             display: flex
-//             justify-content: space-between
-//             align-items: flex-start
-//             #copyright, #quick_links, #contact_us
-//                 margin-top: 120px
-
-//             #copyright
-//                 margin-top: 200px
-//                 display: flex
-//                 img
-//                     margin: 10px
-//                     margin-top: 5px
-//             #quick_links
-//                 display: flex
-//                 flex-direction: column
-//                 justify-content: center
-//                 align-items: center
-//                 width: 250px
-//                 #linkname
-//                     align-self: flex-start
-//                     margin-bottom: 20px
-//                 #links
-//                     display: flex
-//                     align-items: center
-//                     justify-content: flex-start
-//                     flex-wrap: wrap
-//                     a
-//                         color: #909aad
-//                         margin-bottom: 10px
-//                         width: 50%
-//                         text-decoration: none
-//             #contact_us
-//                 display: flex
-//                 flex-direction: column
-//                 justify-content: center
-//                 #contact_us_prev
-//                     margin-bottom: 20px
-//                 #contacts
-//                     strong
-//                         font-weight: 100
-//                     ul>li
-//                         margin-bottom: 10px
-//                         list-style-type: none
-//                         &>p, a
-//                             display: inline-block
-//                             color: #909aad
-//                             text-decoration: none
-
-
-// HERE IS REMAKE
-
-$good_color: #4c515b
-
 body
     font-family: Open Sans
     display: flex
@@ -371,8 +29,19 @@ body
         color: #556b72
         font-size: 30px
 
+.form__input
+    font-family: 'Roboto', sans-serif
+    color: #333
+    font-size: 1.2rem
+    margin: 0 auto
+    padding: 0.7rem 1.4rem 0.5rem 1.4rem
+    border-radius: 0.2rem
+    background-color: rgb(255, 255, 255)
+    border: none
+    border-bottom: 0.3rem solid transparent
+    transition: all 0.3s
+
 .background_block
-    background-color: $good_color
     display: flex
     width: 100%
     justify-content: center 
@@ -385,6 +54,9 @@ body
 
 #newsletter_bg, #domain_bg
     background-color: #e7f4f8
+
+#feature_bg
+    background-color: #fffbde
 
 .inside_block
     width: 1200px
@@ -430,9 +102,10 @@ body
             td
                 padding: 5px 15px
                 border: 1px solid #d0d5da
-            p
+            a
                 color: #9ba4b0
                 font-size: 14px
+                text-decoration: none
     #lowlevel_top
         display: flex
         flex-direction: row
@@ -481,3 +154,196 @@ body
                 margin: 5px 20px 0px 10px
                 p
                     margin-bottom: 5px
+
+.feature_block
+    display: flex
+    height: 420px
+    justify-content: center
+    #left_side, #right_side
+        padding-top: 80px
+
+    #left_side
+        width: 400px
+        #banner
+            margin: 25px 20px
+            background-color: #ffffff
+            width: 360px
+            height: 120px
+            display: flex
+            justify-content: center
+            align-items: center
+            .border
+                margin: 10px
+                height: 100px
+                width: 340px
+                border: 3px solid #fffbde
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-start
+                padding-left: 20px
+                div
+                    display: flex
+                #t0
+                    color: #97947f
+                    margin-left: 3px
+                    font-size: 14px
+                #bottom
+                    width: 300px
+                    justify-content: space-between
+                    align-items: center
+                    #t1, #t2
+                        font-size: 48px
+
+                    #t1
+                        color: #ff8261
+                    #t2 
+                        color: #8edcfa
+                    #d2
+                        flex-direction: column
+                        margin-right: 10px
+                        #t3, #t4
+                            font-size: 17px
+                        #t3
+                            color: #97947f
+                        #t4
+                            color: #4c515b
+                    
+
+    #right_side
+        width: 700px
+        padding-left: 150px 
+        display: flex
+        flex-direction: column
+        ul
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            li
+                width: 250px
+                margin: 5px
+
+        .button_teamplate
+            margin: 10px 20px
+            height: 50px
+
+.pricelist_block
+    display: flex
+    flex-direction: column
+    height: 770px
+    .title_2
+        margin-top: 90px
+        margin-bottom: 35px
+    #prices
+        display: flex
+        justify-content: space-around
+        .rate
+            height: 480px
+            width: 265px
+            font-family: Open Sans
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            border: 2px solid #e1eff4
+            color: #556b72
+            .price
+                margin-top: 20px
+                margin-bottom: 10px
+                h3
+                    font-size: 44px
+                    font-weight: 900
+                p
+                    margin-top: -7px
+                    font-size: 20px
+            #PLAN
+                font-weight: 900
+                color: #ffffff
+                width: 185px
+                height: 60px
+                font-size: 14px
+                background-color: #52cbf8
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-top: 10px
+                margin-bottom: 10px
+            ul>li
+                list-style-type: none
+                padding-top: 10px
+                padding-bottom: 10px
+                &:not(:first-child)
+                    border-top: 1px solid #556b72
+            input
+                margin-top: 12px
+                width: 120px
+                height: 50px
+
+.newsletter_block
+    height: 240px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .send_form
+        input
+            width: 740px
+        button
+            margin-left: 5px
+            width: 200px
+            height: 50px
+            
+.footer_block
+    height: 400px
+    p
+        color: #828b9d
+    strong
+        color: #ffffff
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    #copyright, #quick_links, #contact_us, #social
+        margin-top: 120px
+
+    #copyright
+        margin-top: 200px
+        display: flex
+        img
+            margin: 10px
+            margin-top: 5px
+    #quick_links
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 250px
+        #linkname
+            align-self: flex-start
+            margin-bottom: 20px
+        #links
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            flex-wrap: wrap
+            a
+                color: #909aad
+                margin-bottom: 10px
+                width: 50%
+                text-decoration: none
+    #contact_us, #social
+        display: flex
+        flex-direction: column
+        justify-content: center
+        #contact_us_prev
+            margin-bottom: 20px
+        #contacts
+            strong
+                font-weight: 100
+            ul>li
+                margin-bottom: 10px
+                list-style-type: none
+                &>p, a
+                    display: inline-block
+                    color: #909aad
+                    text-decoration: none
+    #social
+        margin-right: 20px
