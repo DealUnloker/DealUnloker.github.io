@@ -1,0 +1,43 @@
+#top {
+  height: 100% !important; }
+
+#highlevel_top {
+  flex-direction: column;
+  margin-bottom: 10px;
+  justify-content: flex-start !important;
+  height: 100px !important; }
+
+#top_menu {
+  padding-left: 0 !important; }
+
+#lowlevel_top {
+  height: 100% !important;
+  flex-direction: column !important; }
+  #lowlevel_top button {
+    height: 50px !important;
+    width: 100% !important; }
+
+.domain {
+  flex-direction: column;
+  height: 100% !important; }
+  .domain .title {
+    transform: none !important; }
+    .domain .title > * {
+      margin-top: 10px;
+      display: inline-block; }
+    .domain .title img {
+      float: left;
+      margin-right: 10px; }
+    .domain .title strong {
+      font-size: 18px; }
+  .domain #inputs {
+    flex-direction: column; }
+    .domain #inputs #domain_input {
+      width: auto !important; }
+    .domain #inputs #domain_input, .domain #inputs #time_selector, .domain #inputs #lvl_selector {
+      margin: 10px 10px; }
+  .domain .button_teamplate {
+    margin: 10px; }
+
+.title_2 {
+  margin-top: 0 !important; }
