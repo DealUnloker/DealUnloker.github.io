@@ -1,0 +1,85 @@
+#top {
+  height: 100%; }
+
+#lowlevel_top {
+  flex-wrap: wrap;
+  height: 100% !important; }
+  #lowlevel_top button {
+    height: 70px !important;
+    width: 20% !important; }
+
+.domain {
+  flex-direction: column;
+  height: 100%; }
+  .domain .title {
+    margin: 50px 27px 0 !important;
+    align-self: flex-start; }
+  .domain #inputs {
+    width: 100%;
+    justify-content: center; }
+  .domain .button_teamplate {
+    width: 300px !important;
+    margin: 20px; }
+
+.benefits {
+  height: 100% !important; }
+  .benefits .title_2 {
+    margin-top: 10px !important; }
+  .benefits #benefit_block {
+    height: 100% !important;
+    justify-content: space-around; }
+
+.feature_block {
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .feature_block #left_side, .feature_block #right_side {
+    padding-top: 10px !important;
+    margin: 20px 10px !important; }
+  .feature_block #right_side {
+    width: 650px !important;
+    padding-left: 0 !important; }
+    .feature_block #right_side .button_teamplate {
+      align-self: center;
+      width: 70%; }
+
+.pricelist_block {
+  height: 100%; }
+  .pricelist_block .title_2 {
+    margin-top: 10px !important;
+    margin-bottom: 0 !important; }
+  .pricelist_block #prices {
+    flex-wrap: wrap; }
+    .pricelist_block #prices .rate {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+
+.newsletter_block {
+  margin-left: 30px;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start; }
+  .newsletter_block .title {
+    margin: 50px 27px 0 !important; }
+  .newsletter_block .send_form {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; }
+  .newsletter_block input {
+    margin-left: 20px;
+    width: 75% !important; }
+  .newsletter_block button {
+    margin: 15px 20px !important;
+    width: 20% !important; }
+
+.footer_block {
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .footer_block #copyright, .footer_block #quick_links, .footer_block #contact_us, .footer_block #social {
+    width: 300px;
+    padding: 30px;
+    margin: 20px; }
+  .footer_block #copyright {
+    margin-top: 70px; }
