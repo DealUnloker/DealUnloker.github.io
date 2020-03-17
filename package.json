@@ -1,34 +1,36 @@
 {
-    "name": "hosting_site_design",
+    "name": "webpack-bootstap",
     "version": "1.0.0",
-    "description": "frontend",
-    "main": "index.js",
+    "description": "My project with site design",
+    "private": true,
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "cross-env NODE_ENV=development webpack --mode development",
+        "build": "cross-env NODE_ENV=production webpack --mode production",
+        "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+        "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+        "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/DealUnloker/dealunloker.github.io.git"
-    },
-    "keywords": [
-        "frontend",
-        "hosting",
-        "html"
-    ],
-    "author": "Krohaliow O.O.",
+    "author": "Oleksand Krohaliov <dealunloker@gmail.com>",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/DealUnloker/dealunloker.github.io/issues"
-    },
-    "homepage": "https://github.com/DealUnloker/dealunloker.github.io#readme",
-    "dependencies": {
-        "underscore": "^1.9.2"
-    },
     "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^7.0.1",
-        "gulp-clean-css": "^4.2.0",
-        "gulp-sass": "^4.0.2"
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.1.1",
+        "cross-env": "^7.0.2",
+        "css-loader": "^3.4.2",
+        "file-loader": "^5.1.0",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.13.1",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "sass-loader": "^8.0.2",
+        "terser-webpack-plugin": "^2.3.5",
+        "webpack": "^4.42.0",
+        "webpack-bundle-analyzer": "^3.6.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1"
     }
 }
