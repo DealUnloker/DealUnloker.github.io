@@ -1,12 +1,32 @@
 body
+    min-width: 300px
     font-family: Open Sans
 
+#domain_bg
+    background-color: #e7f4f8
+
 .btn
-    background-color:  #ff8261 
+    background-color: #ff8261 
     color: #ffffff
     border-radius: 0
     &:hover
-        background-color:  #52cbf8 
+        background-color: #52cbf8 
+
+.title
+    display: flex
+    justify-content: flex-start
+    transform: translateY(-16px)
+    padding: 15px 0
+    div
+        margin-left: 15px
+        &>*
+            margin: 0
+        h3
+            margin-top: 10px
+            font-size: 18px
+        h2
+            font-size: 30px
+
 
 header
     .header-top
@@ -33,3 +53,14 @@ header
                 color: black
     .header-bottom
         height: 60px
+
+.domain_block
+    height: 200px
+    .form-inline
+        &>*
+            height: 55px
+            margin: 0 5px
+        .form-control
+            width: 400px
+        .custom-select
+            width: 160px
