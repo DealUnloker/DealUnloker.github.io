@@ -1,250 +1,35 @@
 body
-    font-family: "Open Sans"
+    font-family: Open Sans
 
-.reset
-    padding: 0
-    margin: 0
-
-#domain_bg
-    background-color: #e7f4f8
-
-#feature_bg
-    background-color: #fffbde   
-
-#newsletter_bg
-    background-color: #e7f4f8
-
-.button_teamplate
-    border: none
-    background-color: #ff8261
+.btn
+    background-color:  #ff8261 
     color: #ffffff
-    padding: 10px
-    &:focus
-        border: none
-        background: #52cbf8
+    border-radius: 0
     &:hover
-        background: #52cbf8
+        background-color:  #52cbf8 
 
-.title
-    margin-top: 10px
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    p
-        margin: 0
-        padding: 0
-        font-size: 18px
-    strong 
-        display: block
-        font-size: 30px
-        transform: translateY(-8px)
-    
-.title_2
-    display: flex
-    flex-direction: column
-    justify-content: flex-end
-    #good_line
-        width: 30px
-        border-top: 3px solid black
-        border-color: #fb6b45
-        margin-bottom: 8px
-    p
-        color: #9daeb4
-        font-size: 18px
-    strong 
-        display: block
-        transform: translateY(-20px)
-        color: #556b72
-        font-size: 30px
-
-.form__input
-    font-family: 'Roboto', sans-serif
-    color: #333
-    font-size: 1.2rem
-    margin: 0 auto
-    padding: 0.7rem 1.4rem 0.5rem 1.4rem
-    border-radius: 0.2rem
-    background-color: rgb(255, 255, 255)
-    border: none
-    border-bottom: 0.3rem solid transparent
-    transition: all 0.3s
-
-.header-top
-    .logo
-        display: flex
-        align-items: center
-        margin-top: 10px
-        img
-            width: 49px
-            height: 31px
-        p
-            margin: auto 10px
-            font-weight: bolder
-            font-size: 20px
-
-    .top-menu
-        table
-            margin: 10px auto
-            border: 2px solid white
-            border-collapse: collapse
-        td
-            padding: 5px 15px
-            border-left: 2px solid #e1e9f2
-        #table_mail_blank
-            border-left: none
-        a
-            color: #9ba4b0
-            font-size: 14px
-            text-decoration: none
-
-.domain-block
-    padding-bottom: 20px
-
-    .selectors
-        padding-top: 10px
-
-    .domain-form>*
-        margin: 0
-        padding: 0
-        height: 50px
-    .custom-select
-        width: 100%
-        height: 80%
-    .btn
-        margin-top: 5px
-
-.benefits_block
-    .benefit
-        display: flex
-        align-items: flex-start
-        margin: 10px 0
-        img
-            margin: 5px 20px 0px 10px
-            p
-                margin-bottom: 5px
-
-    .title_2
-        margin-top: 20px
-        margin-left: 10px
-
-.feature_block
-    .left_side, .right_side
-        margin-top: 20px
-    
-    #banner
-        transform: translateY(-15px)
-        background-color: #ffffff
-        width: 270px
-        display: flex
-        justify-content: center
-        align-items: center
-        .border
-            margin: 10px
-            height: 90%
-            width: 100%
-            border: 3px solid #fffbde
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: flex-start
-            padding-left: 20px
-            div
-                display: flex
-            
-            #t0
-                transform: translateY(25px)
-                color: #97947f
-                margin-left: 3px
-                font-size: 14px
-                font-weight: 900
-            #bottom
-                justify-content: space-between
-                align-items: center
-                flex-wrap: wrap
-                #t1, #t2
-                    font-size: 48px
-
-                #t1
-                    color: #ff8261
-                #t2 
-                    color: #8edcfa
-
-    .left_side
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        .title_2
-            transform: translateX(-25px)
-
-    .right_side
-        flex-direction: column
-        margin-bottom: 30px
-        ul
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-around
-            padding-left: 15px
-            li
-                padding-left: 10px
-
-        .button_teamplate
-            align-self: center
-            width: 80%
-            height: 50px
-
-.hosting_block
-    .title_2
-        // margin-top: 80px
-        // margin-left: 0
-        margin-top: 20px
-        margin-left: 0
-    .rate
-        margin: 10px 0
-        height: 520px
-        // width: 265px
-        width: 95%
-        font-family: Open Sans
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
-        border: 2px solid #e1eff4
-        color: #556b72
-        .price
-            margin-top: 20px
-            h3
-                font-size: 44px
-                font-weight: 900
-            p
-                margin-top: -7px
+header
+    .header-top
+        height: 100px
+        .logo
+            h1
+                margin: 0 5px
                 font-size: 20px
-        #PLAN
-            font-weight: 900
-            color: #ffffff
-            width: 185px
-            height: 60px
-            font-size: 14px
-            background-color: #52cbf8
-            display: flex
-            justify-content: center
-            align-items: center
-            margin-top: 10px
-            margin-bottom: 10px
-            p
+                font-weight: 900
+        .custom-border
+            border-top: 2px solid #e1e9f2
+            border-bottom: 2px solid #e1e9f2
+            padding: 10px
+            .separator
+                width: 2px
+                margin: 0 20px
+                background-color: #e1e9f2
+            h2, a
+                display: block
+                font-size: 14px
                 margin: 0
-        ul
-            padding-left: 0
-            li
-                list-style-type: none
-                padding-top: 10px
-                padding-bottom: 10px
-                &:not(:first-child)
-                    border-top: 1px solid #556b72
-        input
-            width: 120px
-            height: 50px
-
-    .newsletter_block
-        
+                color: #9ba4b0
+            strong
+                color: black
+    .header-bottom
+        height: 60px
