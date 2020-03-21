@@ -1,9 +1,19 @@
 body
     min-width: 300px
     font-family: Open Sans
+    h2
+        font-size: 30px
+        color: #556b72
+    h3
+        font-size: 18px
+        color: #859aa1
+
 
 #domain_bg
     background-color: #e7f4f8
+
+#feature_bg
+    background-color: #fffbde   
 
 .btn
     background-color: #ff8261 
@@ -23,9 +33,16 @@ body
             margin: 0
         h3
             margin-top: 10px
-            font-size: 18px
-        h2
-            font-size: 30px
+
+.title_2
+    .upline
+        margin-left: 3px
+        margin-bottom: 5px
+        width: 2rem
+        height: 3px
+        background-color: #fb6b45
+    &>*
+        margin: 0
 
 
 header
@@ -64,3 +81,87 @@ header
             width: 400px
         .custom-select
             width: 160px
+
+.benefits_block
+    height: 550px
+    flex-direction: column
+    .title_2
+        margin: 0 0 15px 15px
+    .benefit
+        padding: 15px 0
+        display: flex
+        .img_holder
+            padding-top: 3px
+            flex: 1 0 95px
+            text-align: center
+        .text
+            h2
+                font-size: 16px
+                font-weight: 900
+            p
+                font-size: 13px
+
+.present_block
+    height: 410px
+    .title_2
+        h2, h3
+            color: #4c515b
+        h2
+            font-weight: 900
+    .custom_card
+        width: 360px
+        height: 120px
+        #white_bg
+            width: 100%
+            height: 100%
+            background-color: #ffffff
+            display: flex
+            #inside_block
+                position: relative
+                flex-grow: 1
+                margin: 10px
+                border: 2px solid #fffbde
+                #t1, #t2, #t3, #t4, #t5
+                    position: absolute
+                #t1
+                    top: 15px
+                    left: 15px
+                    font-size: 14px
+                    font-weight: 900
+                    color: #97947f
+                #t2
+                    top: 22px
+                    left: 13px
+                    font-size: 48px
+                    font-weight: 900
+                    color: #ff8261
+                #t3
+                    top: 22px
+                    left: 115px
+                    font-size: 48px
+                    font-weight: 900
+                    color: #52cbf8
+                #t4
+                    top: 35px
+                    right: 60px
+                    font-size: 17px
+                    font-weight: 500
+                    color: #b6b4a7
+                #t5
+                    top: 56px
+                    right: 29px
+                    font-size: 17px
+                    font-weight: 500
+                    color: #4c515b
+    .feature_block
+        flex-direction: column
+        .features
+            text-align: center
+            ul
+                text-align: left
+                padding: 0
+                margin: 10px 0
+                columns: 2
+                li
+                    list-style-position: inside
+                    margin: 0 0 10px 10px
