@@ -9,11 +9,14 @@ body
         color: #859aa1
 
 
-#domain_bg
+#blue_bg
     background-color: #e7f4f8
 
 #feature_bg
     background-color: #fffbde   
+
+#black_bg
+    background-color: #4c515b
 
 .btn
     background-color: #ff8261 
@@ -104,6 +107,7 @@ header
 .present_block
     height: 410px
     .title_2
+        margin-bottom: 15px
         h2, h3
             color: #4c515b
         h2
@@ -165,3 +169,114 @@ header
                 li
                     list-style-position: inside
                     margin: 0 0 10px 10px
+
+.hosting_block
+    flex-direction: column
+    height: 770px
+    #outblock
+        padding: 10px
+    .title_2
+        margin-bottom: 15px
+        margin-left: 15px
+    .rate
+        width: 260px
+        height: 480px
+        border: 2px solid #e1eff4
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .price
+            text-align: center
+            h2, p
+                margin: 0
+                color: #556b72
+                font-weight: 900 
+            h2
+                font-size: 50px
+            p
+                font-size: 14px
+        .plan
+            background-color: #52cbf8
+            width: 180px
+            height: 40px
+            display: table
+            margin: 15px 0
+            p
+                text-align: center
+                display: table-cell
+                vertical-align: middle
+                color: #ffffff
+        .advances
+            ul
+                width: 180px
+                padding: 0
+                text-align: center
+                &>li:not(:first-child)
+                    border-top: 1px solid #8d9198
+                &>li
+                    color: #9fa2a8
+                    font-size: 14px
+                    padding: 10px 0
+                    list-style-type: none 
+        .btn
+            width: 120px
+
+.subscribe_block
+    height: 200px
+    .form-inline
+        &>*
+            height: 55px
+            margin: 0 5px
+        .form-control
+            width: 720px
+        .custom-select
+            width: 160px
+
+.footer_block
+    height: 380px
+    .magic-class
+        margin-top: 100px
+    p
+        font-size: 14px
+        color: #707887
+    h5
+        font-size: 14px
+        font-weight: 900
+        color: #ffffff
+    .copyright
+        margin-top: 175px
+        display: flex
+        .text
+            padding-top: 5px
+            padding-left: 10px
+            h5
+                font-size: 20px
+    .quick_links
+        h5
+            padding-bottom: 10px
+        ul
+            columns: 2
+            padding: 0
+            &>li
+                padding: 5px 0
+                list-style-type: none
+                a        
+                    color: #757d8c
+    .contact_us
+        h5
+            padding-bottom: 10px
+        strong
+            color: #ffffff
+    .media
+        margin-left: 15px
+        flex-direction: column
+        h5
+            padding-bottom: 10px
+        .items
+            display: flex
+            width: 160px
+            justify-content: space-between
+            img
+                height: 28px
+                width: 28px
