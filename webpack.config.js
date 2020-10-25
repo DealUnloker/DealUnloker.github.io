@@ -58,10 +58,13 @@ const plugins = () => {
             }
         }),
         new CleanWebpackPlugin(),
-        new CopyWebpackPlugin([{
-            from: path.resolve(__dirname, 'src/img/'),
-            to: path.resolve(__dirname, 'dist/img')
-        }]),
+        new CopyWebpackPlugin({
+            patterns: [
+            {
+                from: path.resolve(__dirname, 'src/img/'),
+                to: path.resolve(__dirname, 'dist/img')
+            }
+        ]}),
         new MiniCssExtractPlugin({
             filename: filename('css')
         }),
@@ -93,7 +96,7 @@ module.exports = {
         }
     },
     optimization: optimization(),
-    devtool: isDev ? 'source-map' : '',
+    devtool: isProd ? false : 'source-map',
     plugins: plugins(),
     module: {
         rules: [{
